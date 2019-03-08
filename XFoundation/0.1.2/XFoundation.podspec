@@ -29,7 +29,6 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'XFoundation/Classes/**/*'
   
   # s.resource_bundles = {
@@ -39,7 +38,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'MJRefresh', '~> 3.1.15.7'
+#  s.dependency 'MJRefresh', '~> 3.1.15.7'
 #  s.dependency 'MBProgressHUD', '~> 1.1.0'
 #  s.dependency 'Moya', '~> 11.0.2'
 #  s.dependency 'ObjectMapper', '~> 3.3.0'
@@ -50,15 +49,15 @@ TODO: Add long description of the pod here.
 #  s.dependency 'JXPhotoBrowser', '1.5.1'
 #  s.dependency 'IQKeyboardManagerSwift', '~> 6.1.1'
 #  s.dependency 'DeviceKit', '~> 1.8.1'
-#  
+#
 #  s.dependency 'TZImagePickerController', '~> 3.0.8'
-#  
-#  
+#
+#
 #  s.dependency 'SwiftyBeaver', '~> 1.6.1'
-#  
-#  
-#  s.dependency 'RxSwift', '~> 4.3.1'
-#  s.dependency 'RxCocoa', '~> 4.3.1'
+
+
+#  s.dependency 'RxSwift', '~> 4.4.1'
+#  s.dependency 'RxCocoa', '~> 4.4.1'
 #  s.dependency 'NSObject+Rx', '~> 4.4.1'
-#  s.dependency 'RxOptional', '~> 3.5.0'
+#  s.dependency 'RxOptional', '~> 3.6.2'
 end
