@@ -140,22 +140,26 @@ Pod::Spec.new do |spec|
 	spec.dependency 'MBProgressHUD', '~> 1.1.0'
 	spec.dependency 'DeviceKit', '~> 1.11.0'
 	
-	spec.subspec 'core' do |kf|
-		kf.source_files = 'XFoundation/Classes/*.{h,m,swift}'
+
+	
+	spec.subspec 'Core' do |xf|
+		
+		xf.source_files = 'XFoundation/Classes/*.{h,m,swift}'
 		end
 	
-	spec.subspec 'Alert' do |kf|
+	spec.subspec 'Alert' do |xf|
 		
-			kf.source_files = 'XFoundation/Classes/Alert/*.{h,m,swift}'
-			
+			xf.source_files = 'XFoundation/Classes/Alert/*.{h,m,swift}'
 		end
 	
-	spec.subspec 'AttributedString' do |kf|
+	spec.subspec 'AttributedString' do |xf|
 		
-		kf.source_files = 'XFoundation/Classes/AttributedString/*.{h,m,swift}'
-		kf.dependency 'XFoundation/core'
+		xf.source_files = 'XFoundation/Classes/AttributedString/*.{h,m,swift}'
+		xf.dependency 'XFoundation/Core'
 	end
 	
+	spec.default_subspec = 'Core'
+
 end
 
 
