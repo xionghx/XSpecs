@@ -159,7 +159,7 @@ Pod::Spec.new do |spec|
 		xf.dependency 'XFoundation/Core'
 	end
 	
-	spec.default_subspec = 'Core'
+	spec.default_subspec = 'Core', 'Alert', 'AttributedString'
 
 end
 
