@@ -95,8 +95,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-    spec.source_files  = "Classes", "XFoundation/Classes/**/*.{h,m,swift}"
-  #  spec.source_files = "Classes"
+  # spec.source_files  = "Classes", "XFoundation/Classes/**/*.{h,m,swift}"
+  # spec.source_files = "XFoundation/Classes/Core/*.{h,m,swift}"
 
   # spec.public_header_files = "Classes/**/*.h"
 
