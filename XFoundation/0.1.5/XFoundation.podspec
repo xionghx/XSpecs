@@ -140,6 +140,16 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
   spec.dependency 'MBProgressHUD', '~> 1.1.0'
   spec.dependency 'DeviceKit', '~> 1.11.0'
+  
+  spec.dependency 'Moya', '~> 12.0.1'
+  spec.dependency 'ObjectMapper', '~> 3.3.0'
+  spec.dependency 'CryptoSwift', '~> 0.14.0'
+  
+  
+  spec.dependency 'RxSwift', '~> 4.3.1'
+  spec.dependency 'RxCocoa', '~> 4.3.1'
+  spec.dependency 'NSObject+Rx', '~> 4.4.1'
+  spec.dependency 'RxOptional', '~> 3.5.0'
 
 
 	
@@ -152,6 +162,7 @@ Pod::Spec.new do |spec|
 	spec.subspec 'Alert' do |xf|
 		
 			xf.source_files = "XFoundation/Classes/Alert/*.{h,m,swift}"
+			xf.dependency 'XFoundation/Core'
 
 		end
 	
@@ -164,7 +175,16 @@ Pod::Spec.new do |spec|
 
 	end
 	
-	spec.default_subspec = 'Core', 'Alert', 'AttributedString'
+	spec.subspec 'Server' do |xf|
+		
+		xf.source_files = "XFoundation/Classes/Server/**/*.{h,m,swift}"
+		xf.dependency 'XFoundation/Core'
+		xf.dependency 'XFoundation/Alert'
+
+
+	end
+	
+	spec.default_subspec = 'Core', 'Alert', 'AttributedString', 'Server'
 
 end
 
